@@ -1,0 +1,91 @@
+body {
+    position:absolute;
+    font-family: 'Roboto';
+        font-style: normal;
+    position: absolute;
+        width: 1600px;
+        height: 80px;
+        left: 0px;
+        top: 0px;
+    
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.8);
+}
+.logo-link {
+    
+        width: 145px;
+        height: 31px;
+        left: 215px;
+        top: 24px;
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        
+        
+        color:#2196F3;
+}
+.logo-accent {
+    
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    
+    color: #000000;
+}
+.site {
+    color: #000000;
+        font-size: 14px;
+        line-height: 16.41px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+}
+.site-studio {
+    color: #2196F3;
+font-size: 14px;
+line-height: 16.41px;
+font-weight: 500;
+letter-spacing: 0.02em;
+}
+.auth {
+    color: #757575;
+        font-size: 14px;
+        line-height: 16.41px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+}
+.auth-email {
+color: #2196F3;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+    font-weight: 980px;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #188ce8;
+        color: #FFFFFF;
+    width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+}
