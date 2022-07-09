@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="all-body">
     <!--The head of the site-->
     <header class="page-header">
         <nav>
@@ -14,14 +18,14 @@
                 Web<span class="logo-accent">Studio</span>
             </a>
     
-            <ul class="site">
-                <li><a class="site-studio" href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="/">Контакты</a></li>
+            <ul class="site list">
+                <li><a class="site-link" href="./index.html">Студия</a></li>
+                <li><a class="site-links current" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="site-links" href="/">Контакты</a></li>
             </ul>
     
         </nav>
-        <ul class="auth">
+        <ul class="auth list">
             <li><a class="auth-email" href="info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="auth-phone" href="380961111111">38 096 111 11 11</a></li>
     
@@ -32,7 +36,7 @@
 <section>
     <h1 class="visually-hidden">name</h1>
     <ul>
-        <li><button type="button">Все</button></li>
+        <li><button type="button" class="hero-button">Все</button></li>
         <li><button type="button">Вебсайты</button></li>
         <li><button type="button">Приложения</button></li>
         <li><button type="button">Дизайн</button></li>
@@ -154,24 +158,24 @@
 </section>
     </main>
 
-    <footer>
-<a href="/">
-    WebStudio
-</a>
-<address>
-    <ul>
-        <li>
-            <a href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd" target="_blank"
-                rel="noopener noreferrer">г.Киев, пр-т Леси Украинки, 26</a>
-        </li>
-        <li>
-            <a href="info@example.com">info@example.com</a>
-        </li>
-        <li>
-            <a href="380991111111">+38 099 111 11 11</a>
-        </li>
-    </ul>
-</address>
+    <footer class="footer">
+        <a href="/" class="logo-link">
+            Web<span class="footer-accent">Studio</span>
+        </a>
+        <address>
+            <ul>
+                <li>
+                    <a class="footer-adress" href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd"
+                        target="_blank" rel="noopener noreferrer">г.Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li>
+                    <a class="footer-email" href="info@example.com">info@example.com</a>
+                </li>
+                <li>
+                    <a class="footer-phone" href="380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
     </footer>
 </body>
 </html>

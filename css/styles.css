@@ -52,16 +52,30 @@
     
     color: var(--title-text-color);
 }
+.auth-email {
+    color: var(--accent-color);
+        text-decoration: none;
+}
+.auth-phone {
+    color: #757575;
+    text-decoration: none;
+}
 .list {
     list-style: none;
 }
 .site-link{    
-color: var(--accent-color);
+color: var(--title-text-color);
 text-decoration: none;
+}
+.site-link.current {
+    color: var(--accent-color);
 }
 .site-links {
     color: var(--title-text-color);
     text-decoration: none;
+}
+.site-links.current {
+    color: var(--accent-color);
 }
 .site-links:hover,
 .site-links:focus {
