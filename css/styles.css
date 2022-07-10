@@ -15,12 +15,11 @@
 
 .all-body {
     font-family: 'Roboto';
-        font-style: normal;
-    font-weight: 700;
-        
-        line-height: 1.5;
-
-        background-color: var(--hero-button);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    background-color: var(--hero-button);
         
 }
 .port-body {
@@ -29,6 +28,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
+        letter-spacing: 0.03em;
     
         
 }
@@ -37,13 +37,14 @@
     background-color: var(--hero-button);
 }
 .logo-link {
-    
         
-    font-family: 'Raleway';
+        
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
+        
         
         
         text-decoration: none;
@@ -51,22 +52,32 @@
 }
 .logo-accent {
     
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
+        width: 145px;
+        height: 31px;
+        left: 215px;
+        top: 24px;
 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
 
     
-    color: var(--title-text-color);
+        color: var(--title-text-color);
 }
 
 
+.auth-list {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+    list-style: none
+}
 .auth-email {
     color: #757575;
         text-decoration: none;
@@ -86,7 +97,17 @@
 .list {
     list-style: none;
 }
+.site-list {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+    list-style: none
+
+}
 .site-link{    
+    
 color: var(--title-text-color);
 text-decoration: none;
 }
@@ -105,26 +126,31 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
+
    
     .hero {
         
 background-color:#2F303A;
     }
     .hero-title {
-        
-        
-            font-weight: 900;
-font-size: 44px;
-
-text-align: center;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
         color: var(--hero-button);
         text-transform: uppercase;
     }
     .hero-button {
-    font-weight: 700;
-    font-size: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
         background-color: var(--portfolio-button) ;
         color: var(--portfolio-text-button);
+        border-radius: 4px;
         border: none;
         cursor: pointer;
         
@@ -132,10 +158,10 @@ text-align: center;
     }
         .hero-button:hover, 
         .hero-button:focus {
+            font-family: 'Roboto';
+            font-style: normal;
             background-color: var(--accent-color);
-            color: var(--hero-button);
-    
-    
+            color: var(--hero-button);   
             font-size: 16px;
             border-radius: 4px;
             
@@ -145,51 +171,67 @@ text-align: center;
         background-color: var(--hero-button);
     }
     .features-list {
-
+    list-style: none
     }   
 
      .features-title {
         font-weight: 700;
         font-size: 14px;
+        line-height: 16px;
         text-transform: uppercase;
         
             
     }
     .features-p {
+        
         font-weight: 400;
-            font-size: 14px;
-            
-            color: var(--portfolio-project-p);
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--portfolio-project-p);
     }
     .section {
         background-color: var(--hero-button);
     }
     .section-list {
-        color: var(--hero-button);
+        list-style: none
     }
     .section-title {
-    font-weight: 700;
+        font-weight: 700;
         font-size: 36px;
+        line-height: 42px;
         text-align: center;
         color: var(--section-title)
     }
     .command {
         background-color: #F5F4FA;
-        color: var(--section-title)
+        color: var(--section-title);
+    }
+    .command-list {
+        list-style: none
+    }
+    .command-frame {
+        text-align: center;
+        
     }
     .command-title {
         font-weight: 700;
-            font-size: 36px;
-            text-align: center;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
 
-            color: var(--section-title)
+        color: var(--section-title)
 
     }
     .command-worker {
+        
         font-size: 16px;
+        line-height: 19px;
+        
     }
     .command-p {
+        font-weight: 400;
         font-size: 16px;
+        line-height: 19px;
         color: var(--portfolio-project-p);
     }
     .footer {
@@ -198,23 +240,32 @@ text-align: center;
         color: var(--hero-button);
     }
     .footer-accent {
-color: var(--hero-button);
+        color: var(--hero-button);
     }
     .adress {
         
-            font-weight: 400;
-            font-size: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+    }
+    .adress-list {
+        list-style: none
     }
     .adress-location {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
         color: var(--hero-button);
         text-decoration: none;
         
-        font-style: normal;
     }
     .adress-email, .adress-phone {
-color: var(--primary-text-color);
-text-decoration: none;
-font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--primary-text-color);
+        text-decoration: none;
+        font-style: normal;
     }
         .adress-email:hover,
         .adress-email:focus {
@@ -233,24 +284,58 @@ font-style: normal;
     .visually-hidden {
         color: transparent;
     }
-    .projects a{
-        
-        
-        
+    .button-list {
+        list-style: none;
+    }
+    .port-button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        background-color: var(--portfolio-button);
+        color: var(--portfolio-text-button);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    }
+    .port-button:hover,
+    .port-button:focus {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        background-color: var(--accent-color);
+        color: var(--hero-button);
+        border-radius: 4px;
+            border: none;
+            cursor: pointer;
+    }
+    .project-list a{
            
         text-decoration: none;
     }
     .project-list {
-        text-decoration: none;
+        list-style: none
     }
     .project-title {
 
-    font-weight: 700;
-    color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        color: var(--title-text-color);
+        letter-spacing: 0.06em;
+        
     }
     .project-p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--portfolio-project-p);
         
-            font-weight: 400;
-            color: var(--portfolio-project-p);
+        
     }
     
