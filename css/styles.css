@@ -9,11 +9,19 @@
     --portfolio-project-p: #757575;
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 .style {
     font-family: 'Roboto';
 }
 
 .all-body {
+    width: 1200px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -23,6 +31,8 @@
         
 }
 .port-body {
+    width: 1200px;
+        margin: 0 auto;
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
