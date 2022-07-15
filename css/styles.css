@@ -24,7 +24,7 @@ html {
 }
 
 .all-body {
-    width: 1600px;
+    width: 92%;
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -39,8 +39,9 @@ html {
 }
 
 .port-body {
-    width: 1230px;
-    margin: 0;
+    width: 1200;
+    padding-left: 15px;
+    padding-right: 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -66,7 +67,7 @@ p, ul {
 }
 
 .page-header {
-    width: 1600px;
+    width: 92%;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -169,12 +170,12 @@ p, ul {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    width: 1240px;
 
 }
 
 .hero {
-    width: 1600px;
+    width: 92%;
     background-color: #2F303A;
     margin-bottom: 94px;
     text-align: center;
@@ -226,19 +227,19 @@ p, ul {
 }
 
 .container {
-    width: 1200px;
+    width: 92%;
     padding-left: 15;
     padding-right: 15;
     margin: 0 auto;
     
-    outline: 1px solid tomato;
+    
     
 
 }
 
 .features {
     background-color: var(--hero-button);
-    width: 1600px;
+    width: 92%;
     margin-bottom: 94px;
 
 }
@@ -270,7 +271,7 @@ p, ul {
 
 .section {
     background-color: var(--hero-button);
-    width: 1600px;
+    width: 92%;
     padding-bottom: 92px;
     text-align: center;
 
@@ -296,7 +297,7 @@ p, ul {
 }
 
 .command {
-    width: 1600px;
+    width: 92%;
     background-color: #F5F4FA;
     color: var(--section-title);
     padding-bottom: 94px;
@@ -353,11 +354,9 @@ p, ul {
 }
 
 .footer {
-    position: absolute;
-    width: 1600px;
+    width: 92%;
     height: 252px;
     padding-top: 60px;
-    padding-left: 215px;
     background-color: #2F303A;
     ;
     color: var(--hero-button);
@@ -372,7 +371,7 @@ p, ul {
 
     text-decoration: none;
     color: var(--accent-color);
-    padding-left: 35px;
+    padding-left: 15px;
     margin-top: 60px;
     margin-bottom: 20px;
 }
@@ -456,13 +455,15 @@ p, ul {
 }
 
 .port-header {
-    width: 1230px;
+    width: 1330px;
     padding-top: 32px;
     padding-bottom: 32px;
     
 }
 .button-section {
+    width: 1330px;
     margin-bottom: 50px;
+    
 }
 .port-button {
     font-family: 'Roboto';
@@ -527,4 +528,15 @@ p, ul {
     margin-bottom: 20px;
     
 
+}
+.port-footer {
+    
+        width: 1330px;
+        height: 252px;
+        padding-top: 60px;
+        margin-right: 15px;
+        
+        background-color: #2F303A;
+        ;
+        color: var(--hero-button);
 }
