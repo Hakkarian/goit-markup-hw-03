@@ -595,10 +595,7 @@ margin-left: 30px;
     margin-bottom: 30px;
     width: 380px;
 }
-.project-element:hover {
-    background-color: var(--accent-color);
-    color: var(--hero-button);
-}
+
 
 .project-element:nth-child(3n) {
     
