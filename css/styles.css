@@ -26,15 +26,12 @@ html {
 .all-body {
     
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.03em;
     background-color: var(--hero-button);
-    margin-left: 100px;
 
 }
 
@@ -60,8 +57,6 @@ p, ul {
 
 .page-header {
     
-    padding-top: 32px;
-    padding-bottom: 32px;
     border: 1px solid #ECECEC;
 }
 .site-nav {
@@ -71,8 +66,7 @@ p, ul {
 }
 
 .logo-link {
-    margin-top: 24px;
-    margin-bottom: 25px;
+
 
     font-family: 'Raleway';
     font-style: normal;
@@ -99,6 +93,7 @@ p, ul {
 
 .auth-list {
     display: flex;
+
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
@@ -109,6 +104,7 @@ p, ul {
 }
 .site-list {
     margin-left: 93px;
+
     display: flex;
     text-align: center;
     font-size: 14px;
@@ -150,10 +146,13 @@ p, ul {
 .list {
     list-style: none;
 }
+.link {
+    text-decoration: none;
+}
 
 .site-element {
 
-    margin-right: 50px;
+    
     
 }
 
@@ -181,11 +180,12 @@ p, ul {
 
 .site-links {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     line-height: 1.14;
     color: var(--title-text-color);
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .site-links.current {
@@ -198,7 +198,7 @@ p, ul {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -334,12 +334,6 @@ p, ul {
     margin-right: 0;
 }
 
-.section-img {
-    display: block;
-    margin-bottom: 30px;
-    margin-right: 30px;
-    text-align: center;
-}
 
 .command {
     background-color: #F5F4FA;
@@ -352,27 +346,39 @@ p, ul {
 
 .command-list {
     display: flex;
-    justify-content: space-between;
     list-style: none;
     margin-right: 30px;
     margin: 0px;
 }
+.command-list .command-element + .command-element{
+margin-left: 30px;
+}
 .command-list .command-element:last-child{
-margin-right: 0;
+    margin-left: 30px;
+    margin-right: 0px;
 }
 
+.command-link {
+    color: var(--section-title);
+}
 .command-frame {
     background-color: var(--hero-button);
-    margin-bottom: 94px;
     display: inline-block;
     box-sizing: content-box;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.command-box {
+    padding-top: 30px;
+    padding-left: 62px;
+    padding-bottom: 30px;
+    padding-right: 61px;
+
+}
 
 .command-img {
     display: block;
-    margin-bottom: 30px;
+    
 }
 
 .command-title {
@@ -380,7 +386,6 @@ margin-right: 0;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-
     color: var(--section-title);
     padding-top: 94px;
     margin-bottom: 50px;
@@ -388,7 +393,6 @@ margin-right: 0;
 }
 
 .command-worker {
-    text-align: center;
     font-size: 16px;
     line-height: 1.18;
     margin-bottom: 10px;
@@ -397,18 +401,17 @@ margin-right: 0;
 }
 
 .command-p {
-    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     color: var(--portfolio-project-p);
-    margin-bottom: 30px;
+    
 }
 
 .footer {
-    
-    height: 252px;
     padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: #2F303A;
     ;
     color: var(--hero-button);
@@ -523,25 +526,30 @@ margin-right: 0;
     display: flex;
     justify-content: center;
     margin-right: 52px;
-    padding-top: 94px;
     list-style: none;
+    
 }
-.button-list .button-element+.button-element {
+.button-element {
+    
+}
+.button-list .button-element + .button-element{
     margin-left: 8px;
 }
 
 .port-header {
     
-    padding-top: 32px;
-    padding-bottom: 32px;
-    border: 1px solid #ECECEC;
+    
 }
 .button-section {
-    
-    padding-bottom: 50px;
-    
+    padding-top: 94px;
+    padding-bottom: 64px;
 }
 .port-button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -566,11 +574,12 @@ margin-right: 0;
 }
 .port-frame {
     background-color: var(--hero-button);
-    margin-bottom: 94px;
     display: inline-block;
     box-sizing: content-box;
     border: 1px solid #EEEEEE;
 }
+.button-section .port-frame
+
 
 .project-list a {
 
@@ -582,21 +591,34 @@ margin-right: 0;
     flex-wrap: wrap;
     list-style: none
 }
-.project-element {
+ .project-element {
+    margin-bottom: 30px;
     width: 380px;
-    margin-right: 30px;
 }
+.project-element:hover {
+    background-color: var(--accent-color);
+    color: var(--hero-button);
+}
+
 .project-element:nth-child(3n) {
     
     margin-right: 0px;
 }
+
 .port-img {
-    margin-bottom: 20px;
+
 }
 
 .border {
     
 }
+.project-box {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+}
+
 
 .project-title {
 
@@ -606,7 +628,7 @@ margin-right: 0;
     color: var(--title-text-color);
     letter-spacing: 0.06em;
     margin-bottom: 4px;
-    
+    text-decoration: none;
 
 }
 
@@ -615,21 +637,7 @@ margin-right: 0;
     font-size: 16px;
     line-height: 1.87;
     color: var(--portfolio-project-p);
-    margin-bottom: 20px;
+    text-decoration: none;
     
 
-}
-.port-footer {
-    
-        
-        height: 252px;
-        padding-top: 60px;
-        padding-left: 215px;
-        
-        background-color: #2F303A;
-        ;
-        color: var(--hero-button);
-}
-.footer-list {
-    
 }
