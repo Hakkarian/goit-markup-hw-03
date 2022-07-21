@@ -35,6 +35,21 @@ html {
 
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
 .list {
     padding: 0;
     margin: 0;
@@ -219,12 +234,11 @@ p, ul {
     
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .hero-title {
-    padding-top: 200px;
-    margin-bottom: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -235,6 +249,9 @@ p, ul {
 }
 
 .hero-button {
+    padding: 10px 32px;
+    min-width: 130px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -245,10 +262,7 @@ p, ul {
     color: var(--portfolio-text-button);
     display: inline-block;
     border-radius: 4px;
-    padding: 11px 34px;
-    min-width: 130px;
     border: none;
-
     cursor: pointer;
 
 
@@ -310,8 +324,8 @@ p, ul {
 
 .section {
     background-color: var(--hero-button);
-    padding-bottom: 92px;
     text-align: center;
+    padding-bottom: 94px;
 
 }
 
@@ -327,7 +341,7 @@ p, ul {
 
 .section-list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     list-style: none
 }
 .section-list .section-element:last-child {
@@ -336,27 +350,20 @@ p, ul {
 
 
 .command {
-    background-color: #F5F4FA;
     color: var(--section-title);
-    padding-bottom: 94px;
-    
+    padding-top: 94px;
     padding-bottom: 94px;
 
 }
 
 .command-list {
     display: flex;
+    gap: 30px;
     list-style: none;
-    margin-right: 30px;
-    margin: 0px;
+    
 }
-.command-list .command-element + .command-element{
-margin-left: 30px;
-}
-.command-list .command-element:last-child{
-    margin-left: 30px;
-    margin-right: 0px;
-}
+
+
 
 .command-link {
     color: var(--section-title);
@@ -369,10 +376,11 @@ margin-left: 30px;
     border-radius: 0px 0px 4px 4px;
 }
 .command-box {
+    text-align: center;
     padding-top: 30px;
-    padding-left: 62px;
+    padding-left: 10px;
     padding-bottom: 30px;
-    padding-right: 61px;
+    padding-right: 10px;
 
 }
 
@@ -387,12 +395,12 @@ margin-left: 30px;
     line-height: 1.16;
     text-align: center;
     color: var(--section-title);
-    padding-top: 94px;
     margin-bottom: 50px;
 
 }
 
 .command-worker {
+    font-weight: inherit;
     font-size: 16px;
     line-height: 1.18;
     margin-bottom: 10px;
@@ -504,9 +512,6 @@ margin-left: 30px;
 }
 
 
-.visually-hidden {
-    color: transparent;
-}
 
 .port-body {
     
@@ -525,16 +530,14 @@ margin-left: 30px;
 .button-list {
     display: flex;
     justify-content: center;
-    margin-right: 52px;
+    gap: 8px;
     list-style: none;
+    margin-bottom: 50px;
     
 }
 .button-element {
-    
 }
-.button-list .button-element + .button-element{
-    margin-left: 8px;
-}
+
 
 .port-header {
     
@@ -545,10 +548,9 @@ margin-left: 30px;
     padding-bottom: 64px;
 }
 .port-button {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 22px;
-    padding-left: 22px;
+
+    padding: 6px 22px;
+    min-width: 130px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -559,8 +561,6 @@ margin-left: 30px;
     background-color: var(--hero-button);
     color: var(--portfolio-text-button);
     border-radius: 4px;
-    padding: 11px 34px;
-    min-width: 130px;
     border: none;
     cursor: pointer;
 }
@@ -589,18 +589,13 @@ margin-left: 30px;
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    list-style: none
+    list-style: none;
+    gap: 30px;
 }
  .project-element {
-    margin-bottom: 30px;
-    width: 380px;
+    width: 370px;
 }
 
-
-.project-element:nth-child(3n) {
-    
-    margin-right: 0px;
-}
 
 .port-img {
 
