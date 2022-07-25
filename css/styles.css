@@ -7,6 +7,7 @@
     --portfolio-button: #F5F4FA;
     --portfolio-text-button: #212121;
     --portfolio-project-p: #757575;
+    --icon-normal: #AFB1B8;
 }
 
 html {
@@ -160,9 +161,10 @@ p, ul {
 .auth-email:focus {
     color: var(--accent-color);
 }
-.auth-email::before:hover,
-.auth-email::before:focus {
-    background-image: url(../images/envelope.svg);
+.auth-email:hover::before,
+.auth-email:focus::before {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .auth-phone {
     line-height: 1.14;
@@ -170,15 +172,21 @@ p, ul {
     text-decoration: none;
     margin-left: 50px;
 }
-.auth-phone {
+.auth-phone::before {
     content: "";
+    display: inline-block;
     width: 10px;
     height: 16px;
-    margin-left: 15px;
+    margin-left: 10px;
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/vector.svg);
 }
+.auth-phone:hover::before {
+    fill: var(--accent-color);
+}
+
 
 .auth-phone:hover,
 .auth-phone:focus {
@@ -410,6 +418,7 @@ p, ul {
 
 
 .command {
+    background-color: var(--portfolio-button);
     color: var(--section-title);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -426,6 +435,7 @@ p, ul {
 
 .command-link {
     color: var(--section-title);
+    text-decoration: none;
 }
 .command-frame {
     background-color: var(--hero-button);
@@ -436,25 +446,12 @@ p, ul {
 }
 .command-box {
     text-align: center;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-bottom: 30px;
-    padding-right: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
 
 }
-.command-box::after {
-    display: block;
-    
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    color: var(--portfolio-project-p);
-    
-    width: 44px;
-    content: "";
-    height: 44px;
-    outline: 1px solid black;
-    }
 
 
 
@@ -477,9 +474,11 @@ p, ul {
     font-weight: inherit;
     font-size: 16px;
     line-height: 1.18;
-    margin-bottom: 10px;
+    text-decoration: none;
 
-
+}
+.command-p {
+    text-decoration: none;
 }
 
 
@@ -488,20 +487,121 @@ p, ul {
 }
 .networks-list {
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.networks-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--portfolio-text-button);
+}
+.norm {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.norm:hover,
+.norm:focus {
+    background-color: var(--accent-color);
+    color: var(--hero-button);
+}
+
+.networks-element::before {
+    contain: "";
+    width: 20px;
+    height: 20px;
 
 }
-.inst {
-    background-image: url(../images/inst-hover.svg);
+.networks-element:hover {
+    color: var(--hero-button);
 }
-.twit {
-    background-image: url(../images/twit.svg);
+.icon-inst {
+    background-image: url(../images/instagram-normal.svg);
 }
-.facebook {
+.icon-inst:hover::before {
+    fill: var(--hero-button);
+}
+.icon-twit {
+    background-image: url(../images/twitter.svg);
+}
+.icon-face {
     background-image: url(../images/facebook.svg);
 }
-.in {
-    background-image: url(../images/in.svg);
+.icon-in {
+    background-image: url(../images/linkedin.svg);
 }
+
+.features .features-element:last-child {
+    margin-right: 0;
+}
+.icon {
+
+
+}
+.clients {
+    padding-bottom: 94px;
+}
+.clients-title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.clients-element:not(:last-child) {
+    margin-right: 30px;
+}    
+.clients-element {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-element::before {
+    display: block;
+    content: "";
+    width: 170px;
+    height: 92px;
+    
+}
+
+
+
+.icon-acompany {
+    background-image: url(../images/acompany.svg);
+}
+.icon-bcompany {
+    background-image: url(../images/bcompany.svg);
+}
+.icon-ccompany {
+    background-image: url(../images/ccompany.svg);
+}
+.icon-dcompany {
+    background-image: url(../images/dcompany.svg);
+}
+.icon-ecompany {
+    background-image: url(../images/ecompany.svg);
+}
+.icon-gcompany {
+    background-image: url(../images/gcompany.svg);
+}
+.clients-box {
+
+}
+
+
 
 .footer {
     padding-top: 60px;
