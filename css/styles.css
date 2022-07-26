@@ -137,61 +137,44 @@ p, ul {
 }
 
 .auth-email {
-    line-height: 1.14;
-    color: #757575;
-    text-decoration: none;
-}
-
-
-.auth-email::before {
-    content: "";
     display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-left: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(../images/envelope-normal.svg);
-
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--portfolio-project-p);
 }
 
 
-.auth-email:hover,
-.auth-email:focus {
+.email-icon {
+    align-items: center;
+    fill: currentColor;
+
+}
+.auth-email:hover {
     color: var(--accent-color);
 }
-.auth-email:hover::before,
-.auth-email:focus::before {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}
+
+
+
 .auth-phone {
+    display: inline-block;
     line-height: 1.14;
-    color: #757575;
     text-decoration: none;
+    color: var(--portfolio-project-p);
     margin-left: 50px;
 }
-.auth-phone::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    margin-left: 10px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(../images/vector.svg);
-}
-.auth-phone:hover::before {
-    fill: var(--accent-color);
-}
 
+.phone-icon {
+    align-items: center;
+    fill: currentColor;
+
+}
 
 .auth-phone:hover,
 .auth-phone:focus {
     color: var(--accent-color);
 }
+
+
 
 .list {
     list-style: none;
@@ -339,32 +322,26 @@ p, ul {
     list-style: none;
     position: relative;
 }
-.features-element::before {
-    display: block;
-    content: "";
+.features-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
-
+    margin-bottom: 30px;
 
     background-color: var(--portfolio-button);
-    background-image: url(../images/features4.svg);
+
+    border-radius: 4px;
     
-    background-repeat: no-repeat;
-    background-position: center;
+}
+.features-icon {
+fill: currentColor; 
+}
+.features-box:hover {
+    background-color: var(--accent-color);
+    color: var(--hero-button);
+}
 
-
-}
-.icon-scanner::before{
-    background-image: url(../images/features1.svg);
-}
-.icon-clock::before {
-    background-image: url(../images/features2.svg);
-}
-.icon-diagram::before {
-    background-image: url(../images/features3.svg);
-}
-.icon-cosmos::before {
-    background-image: url(../images/features4.svg);
-}
 .features .features-element:last-child {
     margin-right: 0;
 }
@@ -479,28 +456,15 @@ p, ul {
 }
 .command-p {
     text-decoration: none;
+    margin-bottom: 16px;
 }
 
 
 .command-social {
  
 }
-.networks-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-}
 
-.networks-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  fill: var(--portfolio-text-button);
-}
+
 .norm {
     background-position: center;
     background-repeat: no-repeat;
@@ -511,39 +475,41 @@ p, ul {
     color: var(--hero-button);
 }
 
-.networks-element::before {
-    contain: "";
-    width: 20px;
-    height: 20px;
+
+.networks-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.networks-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--hero-button);
+    color: var(--icon-normal);
 
 }
-.networks-element:hover {
+.networks-icon {
+    fill: currentColor;
+}
+.networks-link:hover {
+    background-color: var(--accent-color);
     color: var(--hero-button);
 }
-.icon-inst {
-    background-image: url(../images/instagram-normal.svg);
-}
-.icon-inst:hover::before {
-    fill: var(--hero-button);
-}
-.icon-twit {
-    background-image: url(../images/twitter.svg);
-}
-.icon-face {
-    background-image: url(../images/facebook.svg);
-}
-.icon-in {
-    background-image: url(../images/linkedin.svg);
-}
+
+
+
 
 .features .features-element:last-child {
     margin-right: 0;
 }
-.icon {
 
-
-}
 .clients {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .clients-title {
@@ -569,36 +535,26 @@ p, ul {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.clients-element::before {
-    display: block;
-    content: "";
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
+
+
+    border-radius: 4px;
+    color: var(--icon-normal);
     
 }
+.clients-icon {
+    fill: currentColor;
+}
 
-
-
-.icon-acompany {
-    background-image: url(../images/acompany.svg);
-}
-.icon-bcompany {
-    background-image: url(../images/bcompany.svg);
-}
-.icon-ccompany {
-    background-image: url(../images/ccompany.svg);
-}
-.icon-dcompany {
-    background-image: url(../images/dcompany.svg);
-}
-.icon-ecompany {
-    background-image: url(../images/ecompany.svg);
-}
-.icon-gcompany {
-    background-image: url(../images/gcompany.svg);
-}
-.clients-box {
-
+.clients-link:hover,
+.clients-link:focus {
+    background-color: var(--accent-color);
+    color: var(--hero-button);
 }
 
 
@@ -696,6 +652,55 @@ p, ul {
     color: var(--accent-color);
     text-decoration: none;
     font-style: normal;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-title {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-element {
+
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: var(--hero-button);
+
+}
+
+.footer-icon {
+    fill: currentColor;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--accent-color);
+    color: var(--hero-button);
 }
 
 
