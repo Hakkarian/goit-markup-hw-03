@@ -20,8 +20,10 @@ html {
 }
 
 .all-body {
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -31,7 +33,7 @@ html {
         
 }
 .port-body {
-    width: 1200px;
+    width: 1230px;
         margin: 0 auto;
     font-family: 'Roboto';
         font-style: normal;
@@ -42,9 +44,14 @@ html {
     
         
 }
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .page-header {
-    
-    background-color: var(--hero-button);
+    width: 1600px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .logo-link {
         
@@ -54,27 +61,20 @@ html {
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        
-        
-        
         text-decoration: none;
         color:var(--accent-color);
+        margin-top: 24px;
 }
 .logo-accent {
     
-        width: 145px;
-        height: 31px;
-        left: 215px;
-        top: 24px;
-
+        
         font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-
-    
         color: var(--title-text-color);
+        margin-top: 24px;
 }
 
 
@@ -137,20 +137,30 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
-
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    
+}
    
     .hero {
-        
+        width: 1600px;
+        height: 600px;
 background-color:#2F303A;
+margin-bottom: 94px;
+text-align: center;
     }
     .hero-title {
+        padding-top: 200px;
+        margin-bottom: 0;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         color: var(--hero-button);
         text-transform: uppercase;
+        margin-bottom: 30px;
     }
     .hero-button {
         font-family: 'Roboto';
@@ -161,8 +171,12 @@ background-color:#2F303A;
         letter-spacing: 0.03em;
         background-color: var(--hero-button) ;
         color: var(--portfolio-text-button);
+        display: inline-block;
         border-radius: 4px;
+        padding: 11px 34px;
+        min-width: 130px;
         border: none;
+        
         cursor: pointer;
         
         
@@ -178,8 +192,16 @@ background-color:#2F303A;
             
             
         }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
     .features {
         background-color: var(--hero-button);
+        width: 1600px;
+        margin-bottom: 94px;
+        
     }
     .features-list {
     list-style: none
@@ -190,6 +212,9 @@ background-color:#2F303A;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        
         
             
     }
@@ -199,44 +224,73 @@ background-color:#2F303A;
         font-size: 14px;
         line-height: 1.71;
         color: var(--portfolio-project-p);
+        
     }
     .section {
         background-color: var(--hero-button);
-    }
-    .section-list {
-        list-style: none
+        width: 1600px;
+        padding-bottom: 92px;
+        text-align: center;
+        
     }
     .section-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
-        color: var(--section-title)
+        color: var(--section-title);
+        margin-bottom: 50px;
+        
     }
+    .section-list {
+        list-style: none
+    }
+    .section-img {
+        display: block;
+        margin-bottom: 30px;
+    }
+
     .command {
+        width: 1600px;
         background-color: #F5F4FA;
         color: var(--section-title);
+        padding-bottom: 94px;
+        text-align: center;
+        padding-bottom: 94px;
+        
     }
     .command-list {
         list-style: none
     }
     .command-frame {
-        text-align: center;
-        
+        background-color: var(--hero-button);
+        margin-bottom: 94px;
+        display: inline-block;
+        box-sizing: content-box;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .command-img {
+        display: block;
+        margin-bottom: 30px;
     }
     .command-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        text-align: center;
+        
 
-        color: var(--section-title)
+        color: var(--section-title);
+        padding-top: 94px;
+        margin-bottom: 50px;
 
     }
     .command-worker {
         
         font-size: 16px;
         line-height: 1.18;
+        margin-bottom: 10px;
+
         
     }
     .command-p {
@@ -244,20 +298,49 @@ background-color:#2F303A;
         font-size: 16px;
         line-height: 1.18;
         color: var(--portfolio-project-p);
+        margin-bottom: 30px;
     }
     .footer {
-        
+        position: absolute;
+        width: 1600px;
+        height: 252px;
+        padding-top: 60px;
+        padding-left: 215px;
         background-color: #2F303A;;
         color: var(--hero-button);
     }
-    .footer-accent {
-        color: var(--hero-button);
+    .footer-logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+
+        text-decoration: none;
+        color: var(--accent-color);
+        padding-left: 35px;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
+    .footer-accent {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--hero-button);
+        margin-top: 60px;
+        margin-bottom: 20px;
+        }
+
+    
     .adress {
         
         font-weight: 400;
         font-size: 14px;
         font-style: normal;
+        
+        
     }
     .adress-list {
         list-style: none
@@ -268,15 +351,26 @@ background-color:#2F303A;
         line-height: 1.71;
         color: var(--hero-button);
         text-decoration: none;
+        margin-bottom: 9px;
         
     }
-    .adress-email, .adress-phone {
+    .adress-email {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         color: var(--primary-text-color);
         text-decoration: none;
         font-style: normal;
+        margin-bottom: 9px;
+    }
+    .adress-phone {
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 60px;
     }
         .adress-email:hover,
         .adress-email:focus {
